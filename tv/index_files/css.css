@@ -1,0 +1,29 @@
+*{margin:0;padding:0;font-family:"Î¢ÈíÑÅºÚ"}
+body{background:url(bg.gif) center top;font-size:16px;color:#ccc}
+img{border:0px}
+a,td{text-decoration:none;color:#ccc;font-size:12px}
+a:hover{text-decoration:underline;color:#ff0000;font-size:14px}
+.div{width:100%;padding:13px 0px;text-align:center;margin:auto;overflow:hidden}
+.web{background:333 no-repeat center top;text-align:center}
+.footer{width:100%;background:333;height:100px;padding:47px 10 0 0;overflow:hidden}
+.left{width:84%;float:left;background:333 no-repeat;height:0;padding:0px 0px 0px 0px;margin-right:0px}
+
+.right{width:15%;float:right;border:1px #777 solid}
+.playlist{width:100%;text-align:left;margin:5px auto}
+.playlist a{color:#fff;width:100px;height:10px;line-height:10px;border:1px #000 solid;margin-left:5px;background:#666;margin-bottom:1px;text-align:center}
+.playlist a:hover{background:#929292;border:1px #ccc solid;font-weight:bold}
+.playlist a.ah{background:#ff0000;border:1px #000 solid}
+.list{background:url(list.jpg) repeat-x;height:35px;text-align:left;text-indent:16px;color:#FFFFFF;line-height:35px;border-bottom:1px #777 solid}
+.list span{margin-left:5px;font-size:16px;font-weight:bold;background:url(t_.gif) no-repeat 4px -2px;padding-left:35px}
+.clist{text-align:left}
+.clist div.box{width:100%;margin-bottom:0.5px}
+.clist div.box div.boxtop{height:35px;line-height:35px;text-indent:35px;font-size:16px;font-weight:bold;background:#333 url(j.gif) no-repeat 10px 10px;border-bottom:1px #777 solid;border-top:1px #000 solid;cursor:pointer;color:#d3d8c9}
+.clist div.box div.boxtopj{height:35px;line-height:35px;text-indent:35px;font-size:16px;font-weight:bold;background:#333 url(ja.gif) no-repeat 10px 10px;border-bottom:1px #777 solid;border-top:1px #000 solid;cursor:pointer;color:#ff0000;margin-bottom:1px}
+.clist div.box div.boxmain{width:100%}
+.clist div.box div.boxmain a{width:100%;height:35px;line-height:35px;background:#7c7c7c url(tv.gif) no-repeat 10px 10px;text-indent:35px;border-bottom:1px #000 solid;border-top:1px #9e9e9e solid;color:#1E2F00;display:block;text-decoration:none}
+.clist div.box div.boxmain a:hover,.clist div.box div.boxmain a.lh{background:#333 url(tv.gif) no-repeat 10px 10px;font-weight:bold;color:#ffff00;border-bottom:1px #000 solid;}
+.imglink{text-align:left}
+.textlink{text-align:left}
+.textlink a{margin-left:5px}
+.imglink img{width:88px;height:31px;margin-left:5px}
+

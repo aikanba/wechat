@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>爱看直播频道列表</title>
+        <link href="./tv.css" rel="stylesheet" type="text/css">
+        <script src="./jquery.min.js" type="text/javascript"></script>
+      
+        <script>// JavaScript Document
+            function navList(id) {
+                var $obj = $("#J_navlist"),
+                $item = $("#J_nav_" + id);
+                $item.addClass("on").parent().removeClass("none").parent().addClass("selected");
+                $obj.find("h4").hover(function() {
+                    $(this).addClass("hover");
+                },
+                function() {
+                    $(this).removeClass("hover");
+                });
+                $obj.find("p").hover(function() {
+                    if ($(this).hasClass("on")) {
+                        return;
+                    }
+                    $(this).addClass("hover");
+                },
+                function() {
+                    if ($(this).hasClass("on")) {
+                        return;
+                    }
+                    $(this).removeClass("hover");
+                });
+                $obj.find("h4").click(function() {
+                    var $div = $(this).siblings(".list-item");
+                    if ($(this).parent().hasClass("selected")) {
+                        $div.slideUp(600);
+                        $(this).parent().removeClass("selected");
+                    }
+                    if ($div.is(":hidden")) {
+                        $("#J_navlist li").find(".list-item").slideUp(600);
+                        $("#J_navlist li").removeClass("selected");
+                        $(this).parent().addClass("selected");
+                        $div.slideDown(600);
+
+                    } else {
+                        $div.slideUp(600);
+                    }
+                });
+            }</script>
+        <!--<base target="iframe-player">-->
+        <base href="." target="iframe-player">
+       
+    </head>
+    
+    <body onkeydown="onKeyDown()" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        
+        <div class="bingdoutv">
+            <div class="main">
+                <div class="left-sider">
+                    <div class="operate">
+                        <h3>菜单
+                            <a style="margin-left:5px;color:#888;text-decoration:none;font-size:13px;" rel="nofollow" href="javascript:location.reload()">(刷新)</a>
+                        </h3>
+                        <ul id="J_navlist">
+                            <li>
+                                <h4 class="">热门频道</h4>
+                                <div class="list-item none">
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=20">浙江卫视</a>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=18">湖南卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=5">CCTV-5体育</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=13">CCTV-13新闻</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=17">北京卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=21">江苏卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=19">东方卫视</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>中央频道</h4>
+                                <div class="list-item none">
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=1">CCTV-1综合</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=2">CCTV-2财经</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=3">CCTV-3综艺</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=4">CCTV-4中文国际</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=5">CCTV-5体育</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=6">CCTV-6电影</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=7">CCTV-7军事农业</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=8">CCTV-8电视剧</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=9">CCTV-10科教</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=11">CCTV-11戏曲</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=12">CCTV-12社会与法</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=13">CCTV-13新闻</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=14">CCTV-14少儿</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=15">CCTV-15音乐</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>卫视频道</h4>
+                                <div class="list-item none">
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=20">浙江卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=18">湖南卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=17">北京卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=21">江苏卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=19">东方卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=22">广东卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=23">山西卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=24">深圳卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=25">四川卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=26">旅游卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=27">山东卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=28">吉林卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=29">厦门卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=30">甘肃卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=31">贵州卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=32">云南卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=33">东南卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=34">河北卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=35">重庆卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=36">天津卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=37">青海卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=38">湖北卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=39">辽宁卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=40">陕西卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=41">新疆卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=42">宁夏卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=43">内蒙古卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=44">黑龙江卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=45">西藏卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=46">河南卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=47">江西卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=48">广西卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=49">兵团卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=50">南方卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=51">延边卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=52">三沙卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=53">安徽卫视</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4 class="hover">体育</h4>
+                                <div class="list-item none">
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=54">cctv-5体育</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=55">cctv-5+体育</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=60">BTV体育</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=56">劲爆体育</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=57">五星体育</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=58">高尔夫</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=59">东北篮球</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>港澳台</h4>
+                                <div class="list-item none">
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=82">香港卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=83">澳门卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=95">凤凰卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=96">澳亚卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=97">翡翠台</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=102">环球电视台</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=103">东北戏曲</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>地方台</h4>
+                                <div class="list-item none">
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=89">泉州1套</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=92">泉州4套</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=93">安溪电视台</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=119">石狮综合</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=120">厦门1套</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=121">厦门2套</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=122">厦门3套</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=123">厦门4套</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=84">广东经济科教</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=90">广东南方卫视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=91">广东综艺</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=103">东北戏曲</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=104">东北影视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=105">东北乡村频道</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=106">东北都市频道</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=107">东北公共新闻</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=108">东北生活频道</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=109">吉林7频道</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=110">长春电视台</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=111">吉林综合频道</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=112">四平电视台</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=113">辽源电视台</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=114">通化电视台</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=115">松原电视台</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=116">白城电视台</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=117">延边电视台</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4 class="">少儿节目</h4>
+                                <div class="list-item none">
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=74">嘉佳卡通</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=76">金鹰卡通</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=14">cctv-14少儿</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=78">卡酷少儿</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=77">优漫卡通</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=86">炫动卡通</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=81">广东少儿</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=100">海南少儿</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=118">福州少儿</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=124">济南少儿</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=125">河北少儿</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>影视</h4>
+                                <div class="list-item none">
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=85">音乐台</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=87">东方电影</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=6">CCTV-6电影频道</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=126">BTV影视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=94">CHC动作</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=99">海南影视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=98">河北影视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=101">广东影视</a></p>
+                                    <p>
+                                        <a id="a20" target="main" onclick="javascript:m(&quot;a2&quot;);" href="http://wuxingshijia.com/tv/index.asp?action=play&amp;id=103">东北影视</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                        <script type="text/javascript" language="javascript">navList(12);</script></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

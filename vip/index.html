@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>全网VIP视频解析</title>
+	<meta name="referrer" content="never">
+    <meta name="keywords" content="优酷VIP解析,爱奇艺VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析,全网视频解析,VIP在线解析,视频VIP在线解析,VIP视频在线解析">
+    <meta name="description" content="本站为广大网友提供优酷VIP解析，爱奇艺VIP解析，腾讯VIP解析，乐视VIP解析，芒果VIP解析等解析服务，让你省去购买视频VIP费用，欢迎大家收藏本站，并将她介绍给您的朋友">
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./index_files/index.css" rel="stylesheet" type="text/css">
+
+	<script src="./index_files/jquery.min.js"></script>
+    <script src="./index_files/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="http://video.luochenzhimu.com/assets/favicon.ico">
+    <link rel="bookmark" href="http://video.luochenzhimu.com/assets/favicon.ico">
+
+
+
+	
+    <script type="text/javascript">
+      function dihejk() {
+        var diz = document.getElementById("url").value;
+        var jkurl = document.getElementById("jk");
+        var jk = document.getElementById("jk").selectedIndex;
+        var jkv = jkurl.options[jk].value;
+        var cljurl = document.getElementById("player");
+        cljurl.src = jkv + diz
+      }
+
+      function GetQueryString(name)
+      {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+      }
+      $(function(){
+        if(GetQueryString("url") != null){
+          url = GetQueryString("url")
+          $('#url').val(url)
+          dihejk()
+        }
+
+      })
+
+    </script>
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    
+      <a class="navbar-brand" href="#" target="_blank">全网VIP视频解析　By:小五杂货铺</a>
+    </div>
+   </div><!-- /.container-fluid -->
+    </nav>
+<br>
+<div class="container" style="padding-top:0px;" id="wbk">
+    <div class="col-md-14 column">
+        <form method="get">
+            <div class="input-group" style="width: 100%;"><span class="input-group-addon input-lg" style="width: 80px; ">选择接口</span><select class="form-control input-lg" id="jk">
+			
+			<option value="https://jx.618g.com/?url=">免费VIP线路-1(若失败请切换线路)</option>
+			<option value="http://api.baiyug.vip/index.php?url=">免费VIP线路-2</option>	
+
+			<option value="https://660e.com/?url=">免费VIP线路-3</option>
+			<option value="https://000o.cc/jx/ty.php?url=">免费VIP线路-4</option>
+            		<option value="https://jiexi.071811.cc/jx2.php?url=">免费VIP线路-5</option>
+            		<option value="http://206dy.com/vip.php?url=">免费VIP线路-6</option>
+            
+            </select></div>
+            <br>
+            <div class="input-group" style="width: 100%;"><span class="input-group-addon input-lg" style="width: 80px;">播放地址</span><input class="form-control input-lg" type="search" placeholder="输入播放地址" id="url" autocomplete="off"></div>
+            <br>
+            <div>
+                <button id="bf" type="button" class="btn btn-success btn-lg btn-block" onclick="dihejk()">点击播放</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <div class="panel panel-default">
+        <div id="kj" class="panel-body">
+            <iframe src="./index_files/load.html" id="player" width="100%" height="580px" allowfullscreen="ture" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div id="kj" class="panel-body"><strong>支持但不限于以下网站视频：</strong>
+            <div class="lists">
+                <dl>
+                    <dt><a href="https://www.iqiyi.com/" target="_blank"><img src="./index_files/iqiyi-logo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://www.youku.com/" target="_blank"><img src="./index_files/yk-logo.png"></a>
+					</dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://www.le.com/" target="_blank"><img src="./index_files/le-logo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://v.qq.com/" target="_blank"><img src="./index_files/v-logo.png"></a>
+					</dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://www.tudou.com/" target="_blank"><img src="./index_files/td-logo.png"></a>
+					</dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://tv.sohu.com/" target="_blank"><img src="./index_files/sohu-logo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.56.com/" target="_blank"><img src="./index_files/56-logo.png"></a>
+					</dt>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.ku6.com/" target="_blank"><img src="./index_files/ku6logo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://www.wasu.cn/" target="_blank"><img src="./index_files/wasulogo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.mgtv.com/" target="_blank"><img src="./index_files/hunantvlogo.png"></a>
+					</dt>
+                </dl>
+                <dl>
+                    <dt><a href="http://video.sina.com.cn/" target="_blank"><img src="./index_files/sinalogo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.1905.com/" target="_blank"><img src="./index_files/1905logo.png"></a>
+                    </dt>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
